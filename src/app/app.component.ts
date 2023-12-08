@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { DigiApiService } from './services/digi-api.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +7,16 @@ import { Observable } from 'rxjs';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  digimon: any = {}
+  api_digimons: any
+  digimons: any = []
 
   constructor(private api:DigiApiService){}
 
   ngOnInit() {
-    this.api.getDigimon().subscribe(data => {
-      this.digimon = data;
+    this.api.getDigimon().subscribe((value) => {
+      this.digimons = value
+      
+      console.log(this.digimons)
     })
-
   }
 }

@@ -1,4 +1,4 @@
 <app-header></app-header>
 <main>
-    <app-digimon *ngFor="let item of digimon" />
+    <app-digimon *ngFor="let digimon of digimons" [digimon]="digimon" />
 </main>

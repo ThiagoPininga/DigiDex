@@ -1,0 +1,27 @@
+section{
+    width: 20%;
+    background-color: #3A8DE0;
+
+    border-radius: 10px ;
+
+    box-shadow: -2px 2px 5px;
+}
+
+img{
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+p, h4{
+    color: white;
+}
+
+.infos{
+    padding: 0 20px;
+}
+
+.infos div{
+    display: flex;
+    justify-content: space-between;
+}

@@ -7,13 +7,15 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { DigimonComponent } from './componentes/digimon/digimon.component';
 import { DigimonUnicoComponent } from './componentes/digimon-unico/digimon-unico.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DigimonPipe } from './pipes/digimon.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DigimonComponent,
-    DigimonUnicoComponent
+    DigimonUnicoComponent,
+    DigimonPipe
   ],
   imports: [
     BrowserModule,
