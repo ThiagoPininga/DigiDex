@@ -12,7 +12,7 @@ export class AppComponent {
   constructor(private api:DigiApiService){}
 
   ngOnInit() {
-    this.api.getDigimon().subscribe((value) => {
+    this.api.getDigimon('').subscribe((value) => {
       this.digimons = value
       this.digimons = this.digimons.content
       console.log(this.digimons)
