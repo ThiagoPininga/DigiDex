@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DigiApiService } from './services/digi-api.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -15,5 +16,6 @@ export class AppComponent {
     this.api.getDigimon().subscribe(data => {
       this.digimon = data;
     })
+
   }
 }

@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    top: -4vh;
+}
+
+img{
+    width: 10vw;
+    margin-left: 5vw; 
+}
+
+form{
+    margin-right: 10vw;
+}
+
+input{
+    border-radius: 10px;
+    width: 35vw;
+    padding: 1vh;
+    color: #fff;
+    background-color: #5279A1;
+    border: none;
+}
