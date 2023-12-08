@@ -9,6 +9,6 @@ export class DigiApiService {
   constructor(private http: HttpClient) { }
 
   getDigimon(){
-    return this.http.get('https://digi-api.com/api/v1/digimon?pageSize=12&page=0')
+    return this.http.get('https://digi-api.com/api/v1/digimon?pageSize=30&page=0')
   }
 }

@@ -7,15 +7,14 @@ import { DigiApiService } from './services/digi-api.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  api_digimons: any
-  digimons: any = []
+  digimons: any;
 
   constructor(private api:DigiApiService){}
 
   ngOnInit() {
     this.api.getDigimon().subscribe((value) => {
       this.digimons = value
-      
+      this.digimons = this.digimons.content
       console.log(this.digimons)
     })
   }
