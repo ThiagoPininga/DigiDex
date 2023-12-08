@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
+  digmon_pesquisa: string = ''
 
+  onSubmit(){
+    console.log(this.digmon_pesquisa)
+  }
 }

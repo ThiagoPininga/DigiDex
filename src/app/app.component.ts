@@ -1,3 +1,4 @@
+import { ActivatedRoute } from '@angular/router';
 import { Component } from '@angular/core';
 import { DigiApiService } from './services/digi-api.service';
 
@@ -9,13 +10,18 @@ import { DigiApiService } from './services/digi-api.service';
 export class AppComponent {
   digimons: any;
 
-  constructor(private api:DigiApiService){}
+  constructor(private api:DigiApiService, private route: ActivatedRoute){}
 
   ngOnInit() {
-    this.api.getDigimon('').subscribe((value) => {
-      this.digimons = value
-      this.digimons = this.digimons.content
-      console.log(this.digimons)
-    })
+    this.route.queryParams.subscribe(params => {
+      const pesquisa = params['pesquisa'] || ''; 
+
+      this.api.getDigimon(pesquisa).subscribe((value) => {
+        this.digimons = value; 
+        this.digimons = this.digimons.content
+        console.log(this.digimons);
+      });
+    });
+    
   }
 }
