@@ -8,3 +8,8 @@ main {
 
     margin-bottom: 30px;
   }
+
+div{
+  display: flex;
+  justify-content: center;
+}

@@ -16,6 +16,13 @@ section{
     justify-content: space-around;
 }
 
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .header div{
     padding-right:10vw ;
     padding-bottom: 30px;
@@ -23,6 +30,8 @@ section{
 div p{
     margin-bottom: 50px;
     font-size: 1.5rem;
+
+    margin: 20px;
 }
 p{
     font-size: 1.2rem;

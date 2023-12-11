@@ -1,3 +1,6 @@
 <main>
-    <app-digimon *ngFor="let digimon of digimons" [digimon]="digimon" />
+    <app-digimon *ngFor="let digimon of digimons | paginate: {itemsPerPage: 12, currentPage: p }" [digimon]="digimon" />
 </main>
+<div>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

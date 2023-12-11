@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DigimonListaComponent {
   digimons: any;
+  p: number = 1;
 
   constructor(private api:DigiApiService, private route: ActivatedRoute){}
 

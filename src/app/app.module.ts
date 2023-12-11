@@ -12,6 +12,7 @@ import { DigimonListaComponent } from './componentes/digimon-lista/digimon-lista
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 import { DigimonEvolComponent } from './componentes/digimon-evol/digimon-evol.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DigimonEvolComponent } from './componentes/digimon-evol/digimon-evol.co
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
