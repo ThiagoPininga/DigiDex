@@ -11,6 +11,7 @@ import { DigimonPipe } from './pipes/digimon.pipe';
 import { DigimonListaComponent } from './componentes/digimon-lista/digimon-lista.component';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
+import { DigimonEvolComponent } from './componentes/digimon-evol/digimon-evol.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { routes } from './app.routes';
     DigimonComponent,
     DigimonUnicoComponent,
     DigimonPipe,
-    DigimonListaComponent
+    DigimonListaComponent,
+    DigimonEvolComponent
   ],
   imports: [
     BrowserModule,

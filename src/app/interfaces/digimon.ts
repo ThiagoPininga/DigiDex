@@ -5,6 +5,4 @@ export interface Digimon {
     type: string;
     atribute: string;
     descricao: string;
-    evol: any;
-    devol: any;
 }

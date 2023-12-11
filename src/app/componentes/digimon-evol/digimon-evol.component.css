@@ -1,0 +1,16 @@
+section{
+    background-color:#3A8DE0 ;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    
+    font-size: 1.5rem;
+}
+
+main{
+    padding: 0 10% ;
+}

@@ -1,0 +1,39 @@
+main{
+    padding: 0 20%;
+
+    color: white;
+}
+section{
+    background-color:#3A8DE0 ;
+
+    border-radius: 20px;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header div{
+    padding-right:10vw ;
+    padding-bottom: 30px;
+}
+div p{
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+section a{
+    background-color: #5279A1;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+a:hover{
+    cursor: pointer;
+}

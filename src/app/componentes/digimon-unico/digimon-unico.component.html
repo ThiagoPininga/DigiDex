@@ -1,3 +1,15 @@
 <main>
-    
+    <section>
+        <div class="header">
+            <img [src]="digimon.img" alt="">
+            <div>
+                <p>Tipo: {{digimon.type}}</p>
+                <p>Nivel: {{digimon.level}}</p>
+                <p>Atributo: {{digimon.atribute}}</p>
+
+                <a (click)="redirecionarParaEvolucao()">Mostrar evoluções</a>
+            </div>
+        </div>
+        <p>{{digimon.descricao}}</p>
+    </section>
 </main>
