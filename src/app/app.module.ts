@@ -8,6 +8,9 @@ import { DigimonComponent } from './componentes/digimon/digimon.component';
 import { DigimonUnicoComponent } from './componentes/digimon-unico/digimon-unico.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DigimonPipe } from './pipes/digimon.pipe';
+import { DigimonListaComponent } from './componentes/digimon-lista/digimon-lista.component';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,14 @@ import { DigimonPipe } from './pipes/digimon.pipe';
     HeaderComponent,
     DigimonComponent,
     DigimonUnicoComponent,
-    DigimonPipe
+    DigimonPipe,
+    DigimonListaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

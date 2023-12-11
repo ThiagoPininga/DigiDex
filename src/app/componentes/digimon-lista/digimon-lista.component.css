@@ -1,0 +1,10 @@
+main {
+    padding: 0 15%;
+    display: grid;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+
+    margin-bottom: 30px;
+  }

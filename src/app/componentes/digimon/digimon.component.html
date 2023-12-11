@@ -1,7 +1,8 @@
-<section>
-    <img [src]="digimon.image" alt="">
-    <div class="infos">
-        <h4>{{digimon.name}}</h4>
-    </div>
-    
-</section>
+<a [routerLink]="['/digimon', digimon.name]">
+    <section>
+        <img [src]="digimon.image" alt="">
+        <div class="infos">
+            <h4>{{digimon.name}}</h4>
+        </div>
+    </section>
+</a>
