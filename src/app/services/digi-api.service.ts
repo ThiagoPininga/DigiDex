@@ -10,7 +10,7 @@ export class DigiApiService {
 
   getDigimon(nome: string){
     const url = `https://digi-api.com/api/v1/digimon/${nome}?pageSize=30&page=0`
-    console.log(url)
+    
     return this.http.get(url)
   }
 }

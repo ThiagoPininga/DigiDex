@@ -29,7 +29,7 @@ export class DigimonUnicoComponent {
       this.digimon_name = params['name'];
       this.api.getDigimon(this.digimon_name).subscribe((data) => {
         this.digimon_primeiro = data
-        console.log(this.digimon_primeiro)
+
         this.digimon.name = this.digimon_primeiro.name
         this.digimon.img = this.digimon_primeiro.images[0].href
         this.digimon.type = this.digimon_primeiro.types[0].type
@@ -38,8 +38,6 @@ export class DigimonUnicoComponent {
         this.digimon.descricao = this.digimon_primeiro.descriptions[1].description
         this.digimon.evol = this.digimon_primeiro.nextEvolutions[0]
         this.digimon.devol = this.digimon_primeiro.priorEvolutions[0]
-
-        console.log(this.digimon.devol)
       })
     });
   }
